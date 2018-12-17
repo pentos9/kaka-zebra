@@ -21,9 +21,9 @@ func whileLoop() {
 	fmt.Println(sum)
 }
 
-func sqrt(x float64) string {
+func squareRoot(x float64) string {
 	if x < 0 {
-		return sqrt(-x) + "i"
+		return squareRoot(-x) + "i"
 	}
 
 	return fmt.Sprint(math.Sqrt(x))
@@ -35,6 +35,6 @@ func print(text string) {
 
 func main() {
 	whileLoop()
-	print(sqrt(6.67))
-	fmt.Println(sqrt(2), sqrt(-4))
+	print(squareRoot(6.67))
+	fmt.Println(squareRoot(2), squareRoot(-4))
 }
