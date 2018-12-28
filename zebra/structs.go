@@ -22,4 +22,9 @@ func main() {
 
 	vertex := Vertex{12, 567}
 	fmt.Println(vertex.X)
+
+	studentFoot := Student{123, "Johnson", "Smith"}
+	p := &studentFoot
+	p.name = "James"
+	fmt.Println(p)
 }
