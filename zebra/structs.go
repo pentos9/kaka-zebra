@@ -15,5 +15,16 @@ type Student struct {
 
 func main() {
 	fmt.Println(Vertex{1, 4})
-	fmt.Println(Student{456, "Ferdinand", "magellan"})
+	fmt.Println(Student{456, "Ferdinand", "Magellan"})
+
+	student := Student{1232, "Gosling", "Magellan"}
+	fmt.Println(student.name)
+
+	vertex := Vertex{12, 567}
+	fmt.Println(vertex.X)
+
+	studentFoot := Student{123, "Johnson", "Smith"}
+	p := &studentFoot
+	p.name = "James"
+	fmt.Println(p)
 }
