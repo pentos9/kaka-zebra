@@ -15,4 +15,7 @@ func main() {
 
 	elem, ok := m[FUNCTION]
 	fmt.Println(elem, ok)
+
+	elem, ok = m["NotExistKey"]
+	fmt.Println(elem, ok)
 }
